@@ -23,11 +23,19 @@
     <p>Hint: The basic equation of a circle is <b>x2 + y2 = r2.</b><</p>
     <br>
     <p><b>ANSWER*:</b></p>
+    <p>If you go to:<p>
+    <a href='https://academo.org/demos/estimating-pi-monte-carlo/'>https://academo.org/demos/estimating-pi-monte-carlo/<a>
+    <p>The method is explained.  If you make a random distrubtion, and then keep track of the coodinates that fall under the value of x^2+y^2 = 1^2, then you can approximate pi by:</p>
+
+    <p><i>pi = 4* (number of points inside) / (number points total)</i></p>
+    <br>
+    <p>Typing a higher number resultsi in a higher estimate</p>
     <form id='form1'>
       Type a value:
-      <input id='input1' type='text' placeholder='text please' required minlength='1' pattern='[a-z]{1,}'>
+      <input id='input1' type='text' placeholder='positive int please' required minlength='1' pattern='[\d]{1,}'>
       <button type='submit' name='button'>Submit</button>
     </form>
-    <p> = <span id="output-section-1"></span></p>
+    <p>Using the above number of points, pi is approx: <span id='output-section-1'></span></p>
+    <canvas id='mainCanvas' width ="200" height="200" style='border:2px solid #000000;'>Drawing canvas:</canvas>
   </body>
 </html>
