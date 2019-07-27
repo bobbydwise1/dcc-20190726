@@ -30,6 +30,7 @@ const whatIsPie = (number) => {
   let answer = 0;
   var c = document.getElementById('mainCanvas');
   var ctx = c.getContext('2d');
+  ctx.clearRect(0, 0, ctx.canvas.width, ctx.canvas.height)
   ctx.beginPath();
   ctx.arc(100,100,100,0,2*Math.PI)
   ctx.stroke();
