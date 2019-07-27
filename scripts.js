@@ -36,7 +36,7 @@ const whatIsPie = (number) => {
   for (i=0; i<number; i++) {
     let x = Math.round(Math.random()*200-100);
     let y = Math.round(Math.random()*200-100);
-    ctx.fillRect(x+100,y+100,2,2);
+    ctx.fillRect(x+100,y+100,1,1);
     //console.log('(x,y) = ('+x+','+y+')')
 
     if (x*x+y*y <= 10000) {answer++}

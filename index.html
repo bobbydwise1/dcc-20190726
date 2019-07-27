@@ -29,13 +29,13 @@
 
     <p><i>pi = 4* (number of points inside) / (number points total)</i></p>
     <br>
-    <p>Typing a higher number resultsi in a higher estimate</p>
+    <p>Typing a higher number results in a higher estimate...</p>
     <form id='form1'>
-      Type a value:
-      <input id='input1' type='text' placeholder='positive int please' required minlength='1' pattern='[\d]{1,}'>
+      <b>Enter a +integer (Warning! bigger number = more time!)</b>:
+      <input id='input1' type='text' placeholder='1 to 9999999' required minlength='1' pattern='[\d]{1,7}'>
       <button type='submit' name='button'>Submit</button>
     </form>
-    <p>Using the above number of points, pi is approx: <span id='output-section-1'></span></p>
+    <p><b>Using the above number of points, pi is approx: <span id='output-section-1'>[Waiting on User Input...]</span></b></p>
     <canvas id='mainCanvas' width ="200" height="200" style='border:2px solid #000000;'>Drawing canvas:</canvas>
   </body>
 </html>
